@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>商店名称:</strong>
   <%= @shop.name %>
 </p>
 
 <p>
-  <strong>Tel:</strong>
+  <strong>电话:</strong>
   <%= @shop.tel %>
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>地址:</strong>
   <%= @shop.address %>
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong>分类:</strong>
   <%= @shop.category %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>描述:</strong>
   <%= @shop.description %>
 </p>
 
-<%= link_to 'Edit', edit_shop_path(@shop) %> |
-<%= link_to 'Back', shops_path %>
+<%= link_to '编辑', edit_shop_path(@shop) %> |
+<%= link_to '返回', shops_path %>

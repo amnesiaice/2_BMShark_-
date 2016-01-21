@@ -1,16 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Shops</h1>
-
+<h1>商店列表</h1>
+<h2>商店总数：<%= @shops.count %>
+</h2>
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Tel</th>
-      <th>Address</th>
-      <th>Category</th>
-      <th>Description</th>
-      <th colspan="3"></th>
+      <th>商店名称</th>
+      <th>电话</th>
+      <th>地址</th>
+      <th>类别</th>
+      <th>描述</th>
+	  <th>相关操作</th>
     </tr>
   </thead>
 
@@ -22,9 +23,9 @@
         <td><%= shop.address %></td>
         <td><%= shop.category %></td>
         <td><%= shop.description %></td>
-        <td><%= link_to 'Show', shop %></td>
-        <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
-        <td><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '详细', shop %>
+        <%= link_to '编辑', edit_shop_path(shop) %>
+        <%= link_to '删除', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Shop', new_shop_path %>
+<%= link_to '新商店', new_shop_path %>

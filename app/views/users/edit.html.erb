@@ -4,15 +4,15 @@
 <div class="span6 offset3">
 	<%= form_for(current_user) do |f| %>
 	<%= render 'shared/error_messages' %>
-	<%= f.label :name %>
+	<%= f.label :姓名 %>
 	<%= f.text_field :name %>
-	<%= f.label :email %>
+	<%= f.label :电子邮件 %>
 	<%= f.text_field :email %>
-	<%= f.label :password %>
+	<%= f.label :密码 %>
 	<%= f.password_field :password %>
-	<%= f.label :password_confirmation, "Confirm Password" %>
+	<%= f.label :password_confirmation, "密码确认" %>
 	<%= f.password_field :password_confirmation %>
-	<%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+	<%= f.submit "保存修改", class: "btn btn-large btn-primary" %>
 	<% end %>
 </div>
 </div>

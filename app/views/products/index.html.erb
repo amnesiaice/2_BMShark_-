@@ -37,15 +37,16 @@ background: #f8b0f8;
 　　　　<strong>价格：￥<%= sprintf("%0.2f", product.price) %></strong><br/>
 		<%= sprintf("库存：%d", product.quantity) %><br/>
 　　　</td>
-　　　<td class="ListActions">
-　　　　<%= link_to 'Show', :action => 'show', :id => product %><br/>
-　　　　<%= link_to 'Edit', :action => 'edit', :id => product %><br/>
-		<%= link_to 'Destroy', { :action => 'destroy', :id => product },
-		:confirm => "Are you sure?" %><br/>
+　　　<td  class="ListActions">
+		
+　　　　<%= link_to '详细', :action => 'show', :id => product %><br/>
+　　　　<%= link_to '编辑', :action => 'edit', :id => product %><br/>
+		<%= link_to '删除', { :action => 'destroy', :id => product },
+		:confirm => "确实要删除么?" %><br/>
 　　　</td>
 　　</tr>
 　<% end %>
 </table>
 
 <br />
-<%= link_to 'New product', new_product_path %>
+<%= link_to '新商品', new_product_path %>

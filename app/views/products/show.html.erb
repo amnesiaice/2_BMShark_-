@@ -1,44 +1,44 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Shop:</strong>
+  <strong>商店:</strong>
   <%= @product.shop_id %>
 </p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>名称:</strong>
   <%= @product.title %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>价格:</strong>
   <%= @product.price %>
 </p>
 
 <p>
-  <strong>Quantity:</strong>
+  <strong>数量:</strong>
   <%= @product.quantity %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>描述:</strong>
   <%= @product.description %>
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong>类别:</strong>
   <%= @product.category %>
 </p>
 
 <p>
-  <strong>Image url:</strong>
+  <strong>图片地址:</strong>
   <%= @product.image_url %>
 </p>
 
 <p>
-  <strong>Date available:</strong>
+  <strong>有效时间:</strong>
   <%= @product.date_available %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to '编辑', edit_product_path(@product) %> |
+<%= link_to '返回', products_path %>
